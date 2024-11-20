@@ -1,21 +1,24 @@
 import React from 'react';
+import Ark from '../../assets/ark.png'
+import Mood from '../../assets/mood.png'
+import Webriz from '../../assets/webriz.png'
 
 const Project = () => {
     const posts = [
         {
-            image: 'Images/mood.png',
+            image: Mood,
             title: 'Mood Tracker',
             url: 'https://usiu-mood-tracker.netlify.app/',
             description: 'An app to help users log and track their daily moods with insightful reports and a user-friendly interface.'
         },
         {
-            image: 'Images/webriz.png',
+            image: Webriz,
             title: 'WebRizz',
             url: 'https://webrizz-hq.vercel.app/',
             description: 'WebRizz HQ delivers tailored digital solutions, helping businesses worldwide connect with their audience and drive growth.'
         },
         {
-            image: 'Images/ark.png',
+            image: Ark,
             title: 'Ark Arcade',
             url: 'https://ark-arcade.vercel.app/',
             description: 'Ark Arcade delivers high-quality products and services through a global vendor network, ensuring customized solutions for clients.'

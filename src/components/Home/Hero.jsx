@@ -1,5 +1,7 @@
 import React from 'react';
-import './Hero.css'; // Optional: Keep your custom keyframes here if needed
+import './Hero.css'; 
+import Profilepic from '../../assets/pic1.jpg'
+
 
 function Hero() {
     return (
@@ -14,7 +16,7 @@ function Hero() {
                     }}
                 >
                     <img
-                        src="Images/pic1.jpg"
+                        src={Profilepic}
                         alt="img"
                         className="rounded-full h-full w-full object-cover"
                     />
