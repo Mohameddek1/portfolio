@@ -66,10 +66,11 @@ function Navbar() {
             <li key={index} className="py-4 md:py-0">
               <NavLink
                 to={link.to}
+                end={link.to === "/portfolio"}
                 className={({ isActive }) =>
                   isActive
                     ? "text-red-600"
-                    : "hover:text-red-500 transition duration-300"
+                    : "hover:text-red-900 transition duration-300"
                 }
                 onClick={() => setIsOpen(false)}
               >
