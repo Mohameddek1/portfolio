@@ -1,0 +1,9 @@
+create react project
+install --save gh-pages
+create repo
+"homepage": "https://Mohameddek1/github.io/portfolio",
+"predeploy": "npm run build",
+"deploy": "gh-pages -d dist",
+base: "/portfolio"
+push to GitHub
+npm run deploy

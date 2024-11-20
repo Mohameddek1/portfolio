@@ -1,0 +1,25 @@
+@keyframes textAppear {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-text {
+    display: inline-block;
+    animation: textAppear 6s ease-out forwards;
+  }
+  
+  .animate-text span {
+    display: inline-block;
+    animation: textAppear 1s ease-out forwards;
+  }
+  
+  .animate-text span:nth-child(1) { animation-delay: 0.1s; }
+  .animate-text span:nth-child(2) { animation-delay: 0.2s; }
+  .animate-text span:nth-child(3) { animation-delay: 0.3s; }
+  
