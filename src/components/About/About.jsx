@@ -43,7 +43,7 @@ function About() {
             What I Can Do
           </h1>
           <p className="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">
-            I am a versatile professional with expertise in web development and cybersecurity, creating secure web applications while ensuring the safety and protection of digital systems through comprehensive security measures.
+            I am a versatile professional with expertise in web development and cybersecurity.
           </p>
 
           {/* Boxes for Different Skills */}
