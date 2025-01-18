@@ -1,7 +1,7 @@
 import React from 'react';
-import './Hero.css'; 
-import Profilepic from '../../assets/pic1.jpg'
-
+import './Hero.css';
+import Profilepic from '../../assets/pic1.jpg';
+import { FaGithub } from 'react-icons/fa';  // Importing GitHub icon from react-icons
 
 function Hero() {
     return (
@@ -29,15 +29,28 @@ function Hero() {
                     Hey, I'm Mohameddeq Abdi
                 </h1>
                 <p className="text-base md:text-lg lg:text-xl mt-6 leading-relaxed">
-                    A Result-Oriented Web Developer and Cybersecurity Enthusiast. <br />
-                    I specialize in building and managing Websites and Web Applications <br />
-                    while securing systems through advanced penetration testing, <br />
-                    binary exploitation, and network security techniques.
+                    Cybersecurity enthusiast and software developer with a passion for creating secure and efficient applications.
                 </p>
                 <div className="flex justify-center md:justify-start mt-10">
-                    <button className="bg-zinc-600 hover:bg-zinc-800 hover:scale-[1.02] py-3 px-8 md:py-4 md:px-12 rounded-md">
-                        <span className="text-white text-base md:text-lg font-bold">PROJECTS</span>
-                    </button>
+                    <a
+                        href="portfolio/pdf/CV.pdf"
+                        download="Mohadek_CV.pdf"
+                        className="bg-orange-900 hover:bg-orange-700 hover:scale-[1.02] py-3 px-8 md:py-4 md:px-12 rounded-md"
+                    >
+                        <span className="text-white text-base md:text-lg font-bold">DOWNLOAD CV</span>
+                    </a>
+                </div>
+
+                {/* GitHub Icon */}
+                <div className="flex justify-center md:justify-start mt-10">
+                    <a
+                        href="https://github.com/your-github-username"  // Replace with your GitHub profile link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-5xl text-orange-500 hover:text-black transition duration-200"
+                    >
+                        <FaGithub /> {/* GitHub Icon */}
+                    </a>
                 </div>
             </div>
         </div>

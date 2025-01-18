@@ -28,7 +28,7 @@ const Project = () => {
     return (
         <div className="bg-gray-100 container mx-auto p-8">
             <div className="w-full mb-20 text-center">
-                <h1 className="text-4xl font-bold text-gray-700">Projects</h1>
+                <h1 className="text-4xl font-bold text-sky-600">Projects</h1>
                 <p className="text-gray-600 text-xl mt-4">Explore some of the work I've done</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
