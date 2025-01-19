@@ -12,7 +12,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="relative bg-gray-400 z-10">
+    <div className="relative bg-sky-900 z-10">
       <div className="h-[80px] w-full flex justify-between items-center px-6 md:px-12">
         {/* Logo Section */}
         <div className="flex items-center gap-3">
@@ -21,7 +21,7 @@ function Navbar() {
             alt="Profile"
             className="h-12 w-12 rounded"
           />
-          <p className="text-base font-bold uppercase text-gray-700">
+          <p className="text-base font-bold uppercase text-gray-200">
             Mohameddeq Abdi
           </p>
         </div>
@@ -60,7 +60,7 @@ function Navbar() {
         <ul
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute md:relative top-[80px] md:top-0 left-0 w-full md:w-auto bg-gray-300 md:bg-transparent z-50 md:z-auto text-center md:flex md:gap-16 md:items-center text-sm font-bold uppercase text-gray-800`}
+          } absolute md:relative top-[80px] md:top-0 left-0 w-full md:w-auto bg-gray-300 md:bg-transparent z-50 md:z-auto text-center md:flex md:gap-16 md:items-center text-sm font-bold uppercase text-gray-100`}
         >
           {links.map((link, index) => (
             <li key={index} className="py-4 md:py-0">
@@ -69,8 +69,8 @@ function Navbar() {
                 end={link.to === "/portfolio"}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-red-600"
-                    : "hover:text-red-900 transition duration-300"
+                    ? "text-orange-600"
+                    : "hover:text-orange-300 transition duration-300"
                 }
                 onClick={() => setIsOpen(false)}
               >

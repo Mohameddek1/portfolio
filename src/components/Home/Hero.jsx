@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
-import Profilepic from '../../assets/pic1.jpg';
-import { FaGithub } from 'react-icons/fa';  // Importing GitHub icon from react-icons
+import Profilepic from '../../assets/profileImage.jpg';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';  // Importing GitHub and LinkedIn icons
 
 function Hero() {
     return (
@@ -35,21 +35,32 @@ function Hero() {
                     <a
                         href="portfolio/pdf/CV.pdf"
                         download="Mohadek_CV.pdf"
-                        className="bg-orange-900 hover:bg-orange-700 hover:scale-[1.02] py-3 px-8 md:py-4 md:px-12 rounded-md"
+                        className="bg-sky-900 hover:bg-sky-700 hover:scale-[1.02] py-3 px-8 md:py-4 md:px-12 rounded-md"
                     >
-                        <span className="text-white text-base md:text-lg font-bold">DOWNLOAD CV</span>
+                        <span className="text-white text-base md:text-lg font-bold">DOWNLOAD MY CV</span>
                     </a>
                 </div>
 
-                {/* GitHub Icon */}
-                <div className="flex justify-center md:justify-start mt-10">
+                {/* GitHub and LinkedIn Icons */}
+                <div className="flex justify-center md:justify-start mt-10 space-x-6">
+                    {/* GitHub Icon */}
                     <a
-                        href="https://github.com/your-github-username"  // Replace with your GitHub profile link
+                        href="https://github.com/Mohameddek1"  // Replace with your GitHub profile link
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-5xl text-orange-500 hover:text-black transition duration-200"
                     >
                         <FaGithub /> {/* GitHub Icon */}
+                    </a>
+                    
+                    {/* LinkedIn Icon */}
+                    <a
+                        href="https://www.linkedin.com/in/mohameddeq-abdi-a08a18262/"  // Replace with your LinkedIn profile link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-5xl text-orange-500 hover:text-black transition duration-200"
+                    >
+                        <FaLinkedin /> {/* LinkedIn Icon */}
                     </a>
                 </div>
             </div>
